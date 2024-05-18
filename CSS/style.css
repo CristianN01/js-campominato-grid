@@ -22,4 +22,13 @@ section.container article.cell{
 section.container > article.cell{
     width: calc((100% / 8) - 4px);
     height: calc((100% / 8) - 4px);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+section.container > article.active{
+    background-color: orange;
 }
