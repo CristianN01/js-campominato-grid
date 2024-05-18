@@ -1,0 +1,25 @@
+body{
+   background-color: brown;
+}
+
+
+
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    width: 500px;
+    height: 500px;
+    margin: 0 auto;
+}
+
+section.container,
+section.container article.cell{
+    border: 2px solid white;
+}
+
+
+section.container > article.cell{
+    width: calc((100% / 8) - 4px);
+    height: calc((100% / 8) - 4px);
+}
