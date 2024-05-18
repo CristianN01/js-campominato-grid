@@ -1,5 +1,8 @@
 const gridContainer = document.querySelector('section.container')
 
+const playButton = document.querySelector('button.play')
+
+
 // ? <article class="cell"></article>
 
 for (let index = 0; index < 64; index++) {
@@ -8,8 +11,13 @@ for (let index = 0; index < 64; index++) {
     cellElement.classList.add('cell')
     cellElement.append(index + 1)
     cellElement.addEventListener('click', function(){
-        cellElement.classList.add('active')
+        cellElement.classList.toggle('active')
     });
+
+    playButton.addEventListener('click', function(){
+        cellElement.classList.remove('active')
+    });
+
 
     gridContainer.appendChild(cellElement)
 }
