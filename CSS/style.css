@@ -1,11 +1,46 @@
-body{
-   background-color: brown;
+
+
+header{
+    height: 65px;
+    background-color: white;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 1000px;
+}
+
+.boolean{
+    margin: 0 auto;
+    max-width: 1000px;
+}
+
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div > img{
+    width: 65px;
+}
+
+div > button.play{
+    margin-right: 2rem;
+    padding: 0.25rem 2rem;
+    background-color: brown;
+    border-radius: 10px;
+    border: 1px solid white;
+    color: white;
+}
+
+main{
+    background-color: brown;
 }
 
 
-
-
 .container{
+    padding: 2rem;
     display: flex;
     flex-wrap: wrap;
     width: 500px;
