@@ -67,3 +67,9 @@ section.container > article.cell{
 section.container > article.active{
     background-color: orange;
 }
+
+section.container > h1{
+    align-self: center;
+    margin: 0 auto;
+    color: white;
+}
